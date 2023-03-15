@@ -1,4 +1,2 @@
 #!/bin/bash
-var="BEST"
 BEST="School"
-echo $BEST
