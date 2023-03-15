@@ -1,2 +1,9 @@
 #!/bin/bash
-echo $(printf %o $(($((5#$(echo $WATER | tr 'water' '01234'))) + $((5#$(echo $STIR | tr 'stir.' '01234'))))) | tr '01234567' 'bestchol')
+# Convert WATER from base water to base 10 using ASCII codes
+water_dec=$(echo "$WATER" | grep -o . | awk '{printf "%d", ord($1)}')
+# Convert STIR from base stir to base 10 using ASCII codes
+stir_dec=$(echo "$STIR" | grep -o . | awk '{printf "%d", ord($1)}')
+# Add the two numbers in base 10
+sum_dec=$((water_dec + stir_dec))
+# Convert the result to base bestchol using ASCII codes
+echo "$sum_dec" | awk '{for(i=1;i<=length;i++) printf "%c", $i + 10}'
