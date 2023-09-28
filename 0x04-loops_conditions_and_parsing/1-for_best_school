@@ -3,7 +3,7 @@
 string_a='Best School'
 # shellcheck Disable=SC2034 
 # Unused Variable Left To Hold Count Values
-for ((i = 1; i <= 10; i++))
+for (( c=1; c<=10; c++ ))
 do
-	echo "Best School"
+    echo "Best School"
 done
