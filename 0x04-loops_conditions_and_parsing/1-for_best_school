@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # th Script used to Display "Best School" 10 times.
 string_a='Best School'
 # shellcheck Disable=SC2034 
