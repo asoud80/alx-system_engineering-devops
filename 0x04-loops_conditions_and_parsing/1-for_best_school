@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# th Script used to Display "Best School" 10 times.
+# the Script used to Display "Best School" 10 times.
 string_a='Best School'
 # shellcheck Disable=SC2034 
 # Unused Variable Left To Hold Count Values
