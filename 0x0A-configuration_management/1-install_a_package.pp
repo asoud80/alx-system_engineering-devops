@@ -1,4 +1,10 @@
-# install flask from pip3 using Puppet
-exec {'install flask':
-  command => '/usr/bin/pip3 install flask==2.1.0'
+# install flask versio 2.1.0
+package { 'falsk':
+ ensure => '2.1.0',
+ provider => 'pip3',
+}
+#install werkzeug version 0.16.1
+package {'werkzeug':
+ ensure => '0.16.1',
+ provider => 'pip3',
 }
