@@ -4,10 +4,10 @@
 if [$# -lt 4]
 	then
 	echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY if less than 3 parameters passed"
-		exit 1
+	exit 1
 fi
 
 
 #Bash script that transfers a file from our client to a server
 
-scp -o "StrictHostKeyChecking=no"  -i "$Path_to_ssh_Key" "$Path_to_file" "$UserName@ip:~/"
+scp -o "StrictHostKeyChecking no"  -i "$path_to_ssh_key" "$path_to_file" "$UserName@$ip:~/"
