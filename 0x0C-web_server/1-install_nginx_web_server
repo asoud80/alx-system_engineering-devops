@@ -13,4 +13,4 @@ echo "Hello World!" | sudo tee /var/www/html/index.html
 sudo nginx -t
 
 # this is to reload the service
-sudo service nginx reload
+sudo service nginx restart
