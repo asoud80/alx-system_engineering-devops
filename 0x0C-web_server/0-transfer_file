@@ -9,3 +9,11 @@ then
 
 #Bash script that transfers a file from our client to a server
 cp -o "StrictHostKeyChecking no" -i "$path_to_ssh_key" "$path_to_file" "$username@$ip:~/"
+
+
+if [ $? -eq 0 ]
+then
+	  echo "FILE TRANSFER WAS SUCCESSFULL"
+  else
+	    echo "FILE TRANSFER FAILED"
+fi
