@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#login to a server
+
+eval $("ssh-agnet")
+ssh-add ~/.ssh/school
+
+ssh ubuntu@54.237.225.53
