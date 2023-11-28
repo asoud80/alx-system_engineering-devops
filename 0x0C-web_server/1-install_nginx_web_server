@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 #Install nginx web server
 
+
 sudo apt-get update
-sudo apt-get install -y nginx
-sudo ufw allow 'nginx HTTP'
+sudo apt-get -y install nginx
+
+sudo ufw allow 'Nginx HTTP'
+
 echo "Hello World!" | sudo tee /var/www/html/index.html
 
 # this to test nginx
