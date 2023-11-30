@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-# takes in a URL, sends a request to that URL, displays the size of the body of the response
+# takes in a URL,sends request to that URL,displays size of z body of response
 
-curl -sI "$1" | grep 'Content-Length' | awk '{print $2}'
+curl - sI "$1" | grep 'Content-Length' | awk '{print $2}'
